@@ -1,0 +1,14 @@
+# --- Ignorer les dossiers systèmes Terraform (trop lourds) ---
+.terraform/
+.terraform.lock.hcl
+
+# --- Ignorer les fichiers d'état (CONTIENT DES SECRETS !) ---
+*.tfstate
+*.tfstate.backup
+
+# --- Ignorer les fichiers de logs de crash ---
+crash.log
+
+# --- Ignorer ta clé secrète (CRITIQUE) ---
+student.json
+**/student.json
